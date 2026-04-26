@@ -26,9 +26,11 @@ Open the site in your browser, type what you want to search for, and press enter
 
 ---
 
-## Access
+## Used Applications
 
-This project is available as a web page and does not require installation.
+- **Crawler**: Searchcovery
+- **Search API**: SEErch API
+- **Index**: SEErch Index
 
 ---
 
