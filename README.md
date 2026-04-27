@@ -1,6 +1,6 @@
 # SEErch
 
-[SEErch](https://darky-github.github.io/seerch-engine/) is a simple search website that lets you find information by typing a query and viewing results instantly.
+[SEErch](https://seerch-engine.onrender.com/) is a simple search website that lets you find information by typing a query and viewing results instantly.
 
 ---
 
@@ -29,7 +29,6 @@ Open the site in your browser, type what you want to search for, and press enter
 ## Used Applications
 
 - **Crawler**: Searchcovery
-- **Search API**: SEErch API
 - **Index**: SEErch Index
 
 ---
