@@ -1,5 +1,3 @@
-const API_BASE = "https://seerch-api.onrender.com";
-
 async function search() {
   const q = document.getElementById("query").value;
   const resultsBox = document.getElementById("results");
@@ -7,7 +5,7 @@ async function search() {
   resultsBox.innerHTML = "Searching...";
 
   try {
-    const res = await fetch(`${API_BASE}/search?q=${encodeURIComponent(q)}`);
+    const res = await fetch(`/search?q=${encodeURIComponent(q)}`);
     const data = await res.json();
 
     resultsBox.innerHTML = "";
@@ -21,9 +19,11 @@ async function search() {
       const div = document.createElement("div");
       div.className = "result";
 
+      const statusLabel = item.status ? `(${item.status})` : "";
+
       div.innerHTML = `
         <a href="${item.url}" target="_blank">${item.title}</a>
-        <div class="score">Score: ${item.score}</div>
+        <div class="score">Score: ${item.score} ${statusLabel}</div>
       `;
 
       resultsBox.appendChild(div);
